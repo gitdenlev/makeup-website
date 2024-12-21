@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeUp Style</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">MakeUp</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-modal">
+        <h3>Корзина</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <p>Всього: <span>0</span> грн</p>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h2 class="animate__animated animate__fadeIn">Ласкаво просимо в світ краси</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">Відкрите для себе косметику, яка підкреслить вашу індивідуальність.</p>
+                <button class="btn animate__animated animate__fadeIn animate__delay-2s">Подивитись каталог</button>
+            </div>
+        </section>
+        
+        <section class="products">
+            <div class="container">
+                <h3 class="animate__animated animate__fadeIn">Популярні продукти</h3>
+                <div class="product-list">
+                    <div class="product-item animate__animated animate__fadeIn">
+                        <img src="/api/placeholder/400/320" alt="Тональный крем">
+                        <h4>Тональний крем</h4>
+                        <p>787 грн</p>
+                        <button class="add-to-cart" data-id="1" data-name="Тональный крем" data-price="787">Додати в корзину</button>
+                    </div>
+                    <div class="product-item animate__animated animate__fadeIn animate__delay-1s">
+                        <img src="/api/placeholder/400/320" alt="Помада">
+                        <h4>Помада</h4>
+                        <p>350 грн</p>
+                        <button class="add-to-cart" data-id="2" data-name="Помада" data-price="350">Додати в корзину</button>
+                    </div>
+                    <div class="product-item animate__animated animate__fadeIn animate__delay-2s">
+                        <img src="/api/placeholder/400/320" alt="Тушь">
+                        <h4>Туш</h4>
+                        <p>303 грн</p>
+                        <button class="add-to-cart" data-id="3" data-name="Тушь" data-price="303">Додати в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MakeUp. Все права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
